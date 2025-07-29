@@ -2,8 +2,7 @@ import java.util.*;
 
 public class Greeter {
 	public static void main(String args[]) {
-		String myName = args[0];
-		greeter(myName);
+		greeter();
 	}
 
 	public static String getName() {
@@ -13,7 +12,10 @@ public class Greeter {
 		return name;
 	}
 
-	public static void greeter(String name) {
+	public static void greeter() {
+		Scanner scanner = new Scanner(System.in);
+		String name = scanner.nextLine();
+
 		System.out.println("I am greeting this guy, the guy is called " + name);
 	}
 }
