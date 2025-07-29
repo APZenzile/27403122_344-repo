@@ -18,4 +18,8 @@ public class Greeter {
 
 		System.out.println("I am greeting this guy, the guy is called " + name);
 	}
+
+	public static void goodbye() {
+		System.out.println("This is a goodbye message");
+	}
 }
